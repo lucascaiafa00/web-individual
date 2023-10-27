@@ -1,0 +1,22 @@
+div{
+    text-align: center;
+}
+
+h1{
+    color: #100e13;
+}
+
+button{
+    background-color: #100e13;
+    border-radius: 30px;
+    border: none;
+    color: #60d68d;
+    font-size: 40px;
+    padding: 10px 20px;
+}
+
+p{
+    font-size: 100px;
+    color: #564a69;
+    font-weight: 500;
+}
