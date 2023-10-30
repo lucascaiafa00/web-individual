@@ -9,10 +9,10 @@ export default function Contador(){
     }
 
     return (
-        <div>
+        <div className="container">
             <h1>Contador</h1>
             <p>{numero}</p>
-            <button onClick={somar}>Somar</button>
+            <button onClick={somar}>+1</button>
         </div>    
     )
 }

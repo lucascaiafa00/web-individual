@@ -1,18 +1,35 @@
-div{
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     text-align: center;
+    min-height: 100vh;
+    background-color: #17131b;
 }
 
 h1{
-    color: #100e13;
+    color: #60d68d;
+    font-size: 50px;
+    text-shadow: 0 0 5px #60d68d;
 }
 
 button{
-    background-color: #100e13;
+    background-color: #1c1922;
     border-radius: 30px;
-    border: none;
+    border: solid 2px #60d68d;
     color: #60d68d;
     font-size: 40px;
     padding: 10px 20px;
+    box-shadow: 0 0 5px 0 #60d68d9f;
+    cursor: pointer;
+}
+
+button:active{
+    transition: ease-in .05s;
+    box-shadow: 0 0 10px 0 #60d68d;
+    background-color: #100e13;
+    transform: scale(0.9);
 }
 
 p{
