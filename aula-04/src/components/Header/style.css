@@ -1,0 +1,33 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #b44646;
+  height: 15vh;
+}
+
+#logo {
+  height: 90%;
+}
+
+ul {
+  display: flex;
+  width: 40vw;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.link {
+  color: #353535;
+  transition: ease 0.2s;
+  font-size: 22px;
+}
+
+.link:hover {
+  color: #dfd6cd;
+}

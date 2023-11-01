@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #b44646;
+    height: 15vh;
+}
+
+#logo{
+    height: 90%;
+}
+
+#formulario-login{
+    background-color: #353535;
+    padding: 20px;
+    text-align: left;
+    max-width: 500px;
+    border: #b44646 solid 2px;
+    border-radius: 5px;
+    box-shadow: #00000025 0 0 10px 10px;
+}
+
+#formulario-login *{
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-top: 0;
+    color: #dfd6cd;
+    text-align: center;
+}
+
+label{
+    color: #dfd6cd;
+}
+
+input[type="text"],input[type="password"]{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0 20px 0;
+}
+
+button{
+    background-color: #b44646;
+    color: #353535;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: #9b3f3f;
+    border-color: #dfd6cd;
+}
+
+.outline{
+    border: solid 2px #b44646;
+}
+
+p{
+    color: #b44646;
+    font-size: 15px;
+    font-weight: 100;
+}

@@ -1,0 +1,10 @@
+li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li button{
+    height: 90%;
+    width: 90%;
+}
