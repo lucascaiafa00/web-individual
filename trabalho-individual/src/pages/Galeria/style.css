@@ -1,0 +1,35 @@
+.container-imagens {
+  margin: 0 auto;
+  width: 80vw;
+  column-count: 4;
+  column-gap: 5px;
+}
+
+.container-imagem {
+    position: relative;
+  max-width: 400px;
+  margin: 5px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.obra {
+  width: 100%;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.obra:hover {
+  transform: scale(1.1);
+}
+
+.container-imagem h3{
+    position: absolute;
+    bottom: 2px;
+    text-transform: capitalize;
+    opacity: 0;
+}
+
+.obra:hover h3 {
+    opacity: 1;
+  }

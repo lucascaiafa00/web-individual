@@ -6,7 +6,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/tasklist' element={<TaskList/>}/>
+      <Route path='/' element={<TaskList/>}/>
     </Routes>
   )
 }
