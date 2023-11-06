@@ -1,0 +1,33 @@
+#obra h2 {
+  width: 100%;
+  text-transform: capitalize;
+  color: var(--cor3);
+  font-size: 40px;
+  font-family: "Cinzel", serif;
+}
+
+#obra h3 {
+  color: var(--cor2);
+  width: 100%;
+}
+
+#obra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 5vw;
+}
+
+#obra img {
+  max-height: 70vh;
+  max-width: 80vw;
+  margin: 20px;
+  border: solid 4px var(--cor1);
+}
+
+#obra p {
+  text-align: left;
+  max-width: 600px;
+  line-height: 25px;
+}

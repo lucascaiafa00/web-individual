@@ -1,0 +1,109 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 2vh 5vw;
+  background-color: var(--cor1);
+  z-index: 1;
+}
+
+h1 {
+  font-size: 30px;
+  color: var(--cor4);
+  font-family: "Cinzel", serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 0 10px;
+  transition: ease 0.2s;
+}
+
+#barra-pesquisa input {
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px 5px 25px;
+  background-color: var(--cor4);
+  color: var(--cor5);
+  outline: none;
+}
+
+#barra-pesquisa input:not(:focus) ~ #container-resultado {
+  opacity: 0;
+  height: 0;
+}
+
+#container-resultado {
+  flex-direction: column;
+  position: absolute;
+  align-items: start;
+  background-color: var(--cor3);
+  width: 200px;
+  text-transform: capitalize;
+  text-align: left;
+  z-index: 0;
+  transition: 1s;
+  height: 150px;
+  overflow-y: scroll;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#container-resultado li {
+  border-bottom: solid 2px var(--cor4);
+  width: 100%;
+  font-size: 15px;
+  transition: ease-in 0.2s;
+}
+
+li a {
+  color: var(--cor4);
+  transition: ease 0.2s;
+}
+
+#links li a:hover {
+  letter-spacing: 2px;
+  color: var(--cor2);
+}
+
+.icone{
+  position: absolute;
+  top: 55%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+#barra-pesquisa{
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  nav,
+  header {
+    flex-direction: column;
+    position: relative;
+  }
+
+  #links {
+    justify-content: center;
+  }
+  #barra-pesquisa input {
+    width: 100%;
+  }
+}

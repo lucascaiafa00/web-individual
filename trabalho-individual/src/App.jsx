@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Obra from "./pages/Obra";
 
 export default function App() {
-
   return (
     <>
       <Header />

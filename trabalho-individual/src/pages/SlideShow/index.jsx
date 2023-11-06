@@ -1,35 +1,42 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import obras from "../../components/Obras";
+import "./style.css";
 
 export default function SlideShow() {
-  const [classe, setClasse] = useState("");
   const [contador, setContador] = useState(0);
+  const [slideAtivo, setSlideAtivo] = useState(false);
 
-  const startSlideShow = () => {
-    setTimeout(() => {
-      if (contador + 1 >= obras.length) {
-        setContador(0);
-      } else {
-        setContador(contador + 1);
-      }
-    }, 2500);
-  };
+  let slideShow;
 
   useEffect(() => {
-    startSlideShow();
-  }, [contador]);
+    if (slideAtivo) {
+      slideShow = setInterval(() => {
+        console.log(obras[contador]);
+        const proximo = contador + 1;
+        if (proximo >= obras.length) {
+          setContador(0);
+        } else {
+          setContador(proximo);
+        }
+      }, 2500);
+    } else {
+      clearInterval(slideShow);
+    }
+
+    return () => clearInterval(slideShow);
+  }, [slideAtivo, contador]);
+
+  function startSlideShow() {
+    setSlideAtivo(!slideAtivo);
+  }
 
   return (
-    <main>
-      <h2>Slide Show</h2>
-      <button type="button" onClick={startSlideShow}>Start Slide Show</button>
-      <img
-        src={obras[contador].imagem}
-        className={classe}
-        alt=""
-        srcSet=""
-        onLoad={startSlideShow}
-      />
+    <main id="slides-container">
+      <button type="button" onClick={startSlideShow}>
+        Start/Stop Slide Show
+      </button>
+      <img src={obras[contador].imagem} className="slide" alt="" srcSet="" />
+      <h2>{obras[contador].titulo}</h2>
     </main>
   );
 }
